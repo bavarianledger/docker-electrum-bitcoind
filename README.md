@@ -1,2 +1,2 @@
 # docker-electrum-bitcoind
-un a Bitcoin Core ElectrumX server with one command.
+Run a Bitcoin Core ElectrumX server with one command.
