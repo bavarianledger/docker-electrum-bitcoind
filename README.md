@@ -25,8 +25,8 @@ python3 run_electrum -1 -s [IP of your server]:55002:s
 
 ### I don't trust your images, how do I build them myself?
 
-You can build `jamesob/docker-bitcoind` and `lukechilds/electrumx` yourself here:
+You can build `kylemanna/docker-bitcoind` and `lukechilds/electrumx` yourself here:
 
-- https://github.com/jamesob/docker-bitcoind
+- https://github.com/kylemanna/docker-bitcoind
 - https://github.com/lukechilds/docker-electrumx
 
