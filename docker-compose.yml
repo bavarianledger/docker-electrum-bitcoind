@@ -1,18 +1,16 @@
-version: "2"
 services:
 
   bitcoind:
-    image: jamesob/bitcoind
+    image: kylemanna/bitcoind
     expose:
       - "8332"
     ports:
       - "8333:8333"
     volumes:
-      - ./data/bitcoind:/root/.bitcoin
+      - ./data/bitcoind:/bitcoin/.bitcoin
     environment:
-      - BTC_RPCUSER=electrum
-      - BTC_RPCPASSWORD=electrum
-      - BTC_TXINDEX=1
+      - RPCUSER=electrum
+      - RPCPASSWORD=electrum
 
   electrumx:
     image: lukechilds/electrumx
@@ -23,4 +21,3 @@ services:
     environment:
       - DAEMON_URL=http://electrum:electrum@bitcoind:8332
       - COIN=BitcoinSegwit
-
